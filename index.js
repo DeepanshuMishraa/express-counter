@@ -22,6 +22,8 @@ app.get('/handlesum',(req,res)=>{
 
 app.get('/',(req,res)=>{
     res.send("<h1>A Backend Created By Deepanshu</h1>")
+    res.send("<h2>Go To /handlesum Route To Calculate the sum of numbers from 1 to given number</h2>")
+    res.send("<h3>/handlesum?counter=yournumber to find the sum from 1 to your number </h3>")
 })
 function started(){
     console.log(`Example App Running on ${port}`)
